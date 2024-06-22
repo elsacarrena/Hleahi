@@ -29,5 +29,6 @@ Route::middleware('auth:sanctum')->group(function () {
     //marché
     Route::apiResource('marches', MarcheController::class);
     
+
 });
 

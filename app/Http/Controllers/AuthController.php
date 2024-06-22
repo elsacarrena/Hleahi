@@ -9,12 +9,24 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+    public function index()
+    {
+        return view("./admin/login");
+    }
+    public function inscription()
+    {
+        return view("./admin/register");
+    }
+
+    public function accueil()
+    {
+        return view("admin/index");
+    }
+    
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'username' => 'required|string|max:255',
-            'adresse' => 'required|string|max:255',
-            'phone' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8',
         ]);
@@ -25,8 +37,6 @@ class AuthController extends Controller
 
         $user = User::create([
             'username' => $request->username,
-            'adresse' => $request->adresse,
-            'phone' => $request->phone,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
@@ -58,10 +68,7 @@ class AuthController extends Controller
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
-        return response()->json([
-            'access_token' => $token,
-            'token_type' => 'Bearer',
-        ]);
+        return view("/admin/index");
     }
 
     public function logout(Request $request)

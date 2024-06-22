@@ -17,9 +17,18 @@ class MarcheController extends Controller
         $this->middleware('auth:sanctum');
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $marche = Marche::all();
+        $query = Marche::query();
+
+        if ($request->has('search')) {
+            $search = $request->input('search');
+            $query->where('nom', 'LIKE', "%{$search}%")
+                  
+                  ->orWhere('produits', 'LIKE', "%{$search}%");
+        }
+
+        $marche = $query->get();
         return response()->json($marche);
     }
 

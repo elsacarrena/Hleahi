@@ -35,7 +35,7 @@ Content-Type: application/json
 
 ### Get Marches
 GET http://localhost:8000/api/marches
-Authorization: Bearer 2|9Y0a5ujjxyKZBSngg0lf0aMcQJ9ksDqVvHk5AXIQ37ae3ca8
+Authorization: Bearer 2|3MYtkvIrRMIKmcz4sx7BmuswK4gJdSzZY9Hif0zGe49781ce
 Content-Type: application/json
 
 ###Update

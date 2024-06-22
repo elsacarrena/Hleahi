@@ -1,0 +1,58 @@
+## Register
+POST http://localhost:8000/api/register
+Content-Type: application/json
+
+{
+    "username": "joel",
+    "adresse": "calavi",
+    "phone": "67704246",
+    "email": "savin@gmail.com",
+    "password": "Azerty1234"
+    
+}
+
+### Connexion
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "savin@gmail.com",
+    "password": "Azerty1234"
+}
+
+### création d'un marché 
+POST http://localhost:8000/api/marches
+Authorization: Bearer 2|3MYtkvIrRMIKmcz4sx7BmuswK4gJdSzZY9Hif0zGe49781ce
+Content-Type: application/json
+
+{
+    "nom": "Cadjehoun",
+    "produits": "les tissus",
+    "horaires": "09h-18h",
+    "latitude": "1.123455",
+    "longitude": "10.1234556"
+}
+
+### Get Marches
+GET http://localhost:8000/api/marches
+Authorization: Bearer 2|9Y0a5ujjxyKZBSngg0lf0aMcQJ9ksDqVvHk5AXIQ37ae3ca8
+Content-Type: application/json
+
+###Update
+PUT http://localhost:8000/api/marches/{id}
+Authorization: Bearer 2|9Y0a5ujjxyKZBSngg0lf0aMcQJ9ksDqVvHk5AXIQ37ae3ca8
+Content-Type: application/json
+    {
+        "username": "Jude",
+        "adresse": "Porto",
+        "phone": "67704246",
+        "email": "savin@gmail.com",
+        "password": "Azerty1234"
+    }
+
+
+### Logout
+POST http://localhost:8000/api/logout
+Authorization: Bearer 2|9Y0a5ujjxyKZBSngg0lf0aMcQJ9ksDqVvHk5AXIQ37ae3ca8
+
+

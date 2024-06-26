@@ -20,19 +20,25 @@ use App\Http\Controllers\FaqController;
 Route::get('/', function () {
     return view('accueil');
 });
-Route::get('dashbord', [AuthController::class, 'accueil']);
+
 Route::get('register', [AuthController::class, 'inscription']);
-Route::post('register', [AuthController::class, 'register']);
-Route::post('login', [AuthController::class, 'login']);
+Route::post('register', [AuthController::class, 'register'])->name('register');
+Route::post('login', [AuthController::class, 'login'])->name('login');
 Route::get('login', [AuthController::class, 'index']);
 Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('users', [AdminUserController::class, 'store']);
     Route::get('users', [AdminUserController::class, 'index']);
-   
+    
+    Route::get('dashbord', [AuthController::class, 'accueil']);
     //marché
-    Route::apiResource('marches', MarcheController::class);
+    Route::get('marches', [MarcheController::class, 'index']);
+    Route::post('marches', [MarcheController::class, 'store']);
+    Route::get('marches/{id}', [MarcheController::class, 'show']);
+    Route::put('marches/{id}', [MarcheController::class, 'update']);
+    Route::delete('marches/{id}', [MarcheController::class, 'destroy']);
+    Route::get('total-marches', [MarcheController::class, 'getTotalMarches']);
     
 
 });

@@ -11,13 +11,13 @@
 
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-        
+
         <!-- title of site -->
         <title>Directory Landing Page</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="/assets/logo/favicon.png"/>
-       
+
         <!--font-awesome.min.css-->
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
@@ -33,36 +33,36 @@
 		<!--slick.css-->
         <link rel="stylesheet" href="/assets/css/slick.css">
 		<link rel="stylesheet" href="/assets/css/slick-theme.css">
-		
+
         <!--bootstrap.min.css-->
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-		
+
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="/assets/css/bootsnav.css" >	
-        
+		<link rel="stylesheet" href="/assets/css/bootsnav.css" >
+
         <!--style.css-->
         <link rel="stylesheet" href="/assets/css/style.css">
-        
+
         <!--responsive.css-->
         <link rel="stylesheet" href="/assets/css/responsive.css">
-        
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
+
         <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
     </head>
-	
+
 	<body>
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-		
+
 		<!--header-top start -->
-		
+
 		<!--header-top end -->
 
 		<!-- top-area Start -->
@@ -103,24 +103,24 @@
 		<section id="home" class="welcome-hero">
 			<div class="container">
 				<div class="welcome-hero-txt">
-					<h2>Bienvenue sur l'esplanade des <br>marches du Benin </h2>
+					<h2>Bienvenue sur l'esplanade des nouveaux <br>marchés du Benin </h2>
 					<p>
-                    Trouvez vos marches et vos produits en un seul clic. 
+                    Trouvez vos marchés et vos produits en un seul clic.
 					</p>
 				</div>
 				<div class="welcome-hero-serch-box">
 					<div class="welcome-hero-form">
 						<div class="single-welcome-hero-form">
-							<h3>Marche</h3>
+							<h3>Marché</h3>
 							<form action="index.html">
 								<input type="text" placeholder="Ex: Tokpa" />
 							</form>
-							
+
 						</div>
 					</div>
 					<div class="welcome-hero-serch">
 						<button class="welcome-hero-btn" onclick="window.location.href='#'">
-							Rechercher  <i data-feather="search"></i> 
+							Rechercher  <i data-feather="search"></i>
 						</button>
 					</div>
 				</div>
@@ -139,7 +139,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-restaurant"></i>
 								</div>
-								<h2><a href="#">Commercant</a></h2>
+								<h2><a href="#">Commerçant</a></h2>
 							</div>
 						</li>
 						<li>
@@ -155,7 +155,7 @@
 								<div class="single-list-topics-icon">
 									<i class="flaticon-building"></i>
 								</div>
-								<h2><a href="#">Menageres</a></h2>
+								<h2><a href="#">Menagères</a></h2>
 							</div>
 						</li>
 						<li>
@@ -197,7 +197,6 @@
 								<div class="single-explore-img">
 									<img src="https://th.bing.com/th/id/OIP.W-QYpVeMoshXxjE9ijv86AHaDl?w=331&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="explore image">
 									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
 											<ul>
 												<li>
@@ -218,15 +217,10 @@
 									<h2><a href="#">Nom:</a></h2><br>
                                     <h4><a href="#">Produits:</a></h4>
 									<h4><a href="#">Horaires:</a></h4>
-
-
-                                    
-									
-									
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'"><i data-feather="map-pin"></i>  Localisation</button>
+												<a class="close-btn" href="#map" onclick="window.location.href='#map'"><i data-feather="map-pin"></i>  Localisation</a>
 											</div>
 										</div>
 									</div>
@@ -238,7 +232,6 @@
 								<div class="single-explore-img">
 									<img src="https://th.bing.com/th/id/OIP.W-QYpVeMoshXxjE9ijv86AHaDl?w=331&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="explore image">
 									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
 											<ul>
 												<li>
@@ -259,15 +252,10 @@
 									<h2><a href="#">Nom:</a></h2><br>
                                     <h4><a href="#">Produits:</a></h4>
 									<h4><a href="#">Horaires:</a></h4>
-
-
-                                    
-									
-									
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'"><i data-feather="map-pin"></i>  Localisation</button>
+												<a class="close-btn" href="#map" onclick="window.location.href='#map'"><i data-feather="map-pin"></i>  Localisation</a>
 											</div>
 										</div>
 									</div>
@@ -279,7 +267,6 @@
 								<div class="single-explore-img">
 									<img src="https://th.bing.com/th/id/OIP.W-QYpVeMoshXxjE9ijv86AHaDl?w=331&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="explore image">
 									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
 											<ul>
 												<li>
@@ -300,15 +287,10 @@
 									<h2><a href="#">Nom:</a></h2><br>
                                     <h4><a href="#">Produits:</a></h4>
 									<h4><a href="#">Horaires:</a></h4>
-
-
-                                    
-									
-									
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'"><i data-feather="map-pin"></i>  Localisation</button>
+												<a class="close-btn" href="#map" onclick="window.location.href='#map'"><i data-feather="map-pin"></i>  Localisation</a>
 											</div>
 										</div>
 									</div>
@@ -320,7 +302,6 @@
 								<div class="single-explore-img">
 									<img src="https://th.bing.com/th/id/OIP.W-QYpVeMoshXxjE9ijv86AHaDl?w=331&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="explore image">
 									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
 											<ul>
 												<li>
@@ -341,15 +322,10 @@
 									<h2><a href="#">Nom:</a></h2><br>
                                     <h4><a href="#">Produits:</a></h4>
 									<h4><a href="#">Horaires:</a></h4>
-
-
-                                    
-									
-									
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'"><i data-feather="map-pin"></i>  Localisation</button>
+												<a class="close-btn" href="#map" onclick="window.location.href='#map'"><i data-feather="map-pin"></i>  Localisation</a>
 											</div>
 										</div>
 									</div>
@@ -361,7 +337,6 @@
 								<div class="single-explore-img">
 									<img src="https://th.bing.com/th/id/OIP.W-QYpVeMoshXxjE9ijv86AHaDl?w=331&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="explore image">
 									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
 											<ul>
 												<li>
@@ -382,15 +357,10 @@
 									<h2><a href="#">Nom:</a></h2><br>
                                     <h4><a href="#">Produits:</a></h4>
 									<h4><a href="#">Horaires:</a></h4>
-
-
-                                    
-									
-									
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'"><i data-feather="map-pin"></i>  Localisation</button>
+												<a class="close-btn" href="#map" onclick="window.location.href='#map'"><i data-feather="map-pin"></i>  Localisation</a>
 											</div>
 										</div>
 									</div>
@@ -402,7 +372,6 @@
 								<div class="single-explore-img">
 									<img src="https://th.bing.com/th/id/OIP.W-QYpVeMoshXxjE9ijv86AHaDl?w=331&h=169&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="explore image">
 									<div class="single-explore-img-info">
-										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
 											<ul>
 												<li>
@@ -425,9 +394,9 @@
 									<h4><a href="#">Horaires:</a></h4>
 
 
-                                    
-									
-									
+
+
+
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
@@ -442,19 +411,85 @@
 				</div>
 			</div><!--/.container-->
 
+
+        <section id="#map" style="visibility:hidden;">
+            <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: {lat: -34.397, lng: 150.644},
+                            zoom: 8
+                        });
+                    }
+                </script>
+            <div class="col-sm-12" id="maCarte"></div>
+
+
+            <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+            <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+            <script>
+                var villes = {
+                    "Marché Dantokpa du Bénin": { "lat": 6.372917797961049, "lon": 2.43489229620532 },
+                    "PIGIER BENIN": { "lat": 6.375971592259148, "lon": 2.4030768793528265 },
+                    "Hotel TPF": { "lat": 6.372293025713965, "lon": 2.4038171690119094 },
+                    "CanalOlympia Wologuèdè": { "lat": 6.376244520001359, "lon": 2.416224294720762 },
+                };
+                var tableauMarqueurs = [];
+
+                // On initialise la carte
+                var carte = L.map('maCarte').setView([6.372100421956309, 2.411669507239768], 13);
+
+                // On charge les "tuiles"
+                L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                    // Il est toujours bien de laisser le lien vers la source des données
+                    attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+                    minZoom: 1,
+                    maxZoom: 20
+                }).addTo(carte);
+
+                var marqueurs = L.markerClusterGroup();
+
+                // On personnalise le marqueur
+                var icone = L.icon({
+                    iconUrl: "images/icone.png",
+                    iconSize: [50, 50],
+                    iconAnchor: [25, 50],
+                    popupAnchor: [0, -50]
+                })
+
+                // On parcourt les différentes villes
+                for(ville in villes){
+                    // On crée le marqueur et on lui attribue une popup
+                    var marqueur = L.marker([villes[ville].lat, villes[ville].lon], {icon: icone}); //.addTo(carte); Inutile lors de l'utilisation des clusters
+                    marqueur.bindPopup("<p>"+ville+"</p>");
+                    marqueurs.addLayer(marqueur); // On ajoute le marqueur au groupe
+
+                    // On ajoute le marqueur au tableau
+                    tableauMarqueurs.push(marqueur);
+                }
+                // On regroupe les marqueurs dans un groupe Leaflet
+                var groupe = new L.featureGroup(tableauMarqueurs);
+
+                // On adapte le zoom au groupe
+                carte.fitBounds(groupe.getBounds().pad(0.5));
+
+                carte.addLayer(marqueurs);
+            </script>
+        </section>
+
 		</section><!--/.explore-->
 		<!--explore end -->
-		
+
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
 		<script src="assets/js/jquery.js"></script>
-        
+
         <!--modernizr.min.js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
+
 		<!--bootstrap.min.js-->
         <script src="assets/js/bootstrap.min.js"></script>
-		
+
 		<!-- bootsnav js -->
 		<script src="assets/js/bootsnav.js"></script>
 
@@ -469,10 +504,12 @@
         <script src="assets/js/slick.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		     
+
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
-        
+
+
+
     </body>
-	
+
 </html>

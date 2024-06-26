@@ -31,7 +31,8 @@
               </div>
               <h4>Bienvenue sur la page d'administration</h4>
               <h6 class="font-weight-light">Connectez-vous.</h6>
-              <form class="pt-3">
+              <form action="{{ route('login') }}" method="POST" class="pt-3">
+                @csrf
                 <div class="form-group">
                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" name="email" placeholder="email">
                 </div>
@@ -39,14 +40,10 @@
                   <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" name="password" placeholder="Password">
                 </div>
                 <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="../../index.html">Connexion</a>
+                  <button class="btn btn-primary btn-block" type="submit"> Connexion </button>
                 </div>
-                <div class="my-2 d-flex justify-content-between align-items-center">
-                  <a href="#" class="auth-link text-black">Forgot password?</a>
-                </div>
-                <div class="text-center mt-4 font-weight-light">
-                  Vous n'avez pas encore compte? <a href="register.html" class="text-primary">Créez</a>
-                </div>
+                
+                
               </form>
             </div>
           </div>

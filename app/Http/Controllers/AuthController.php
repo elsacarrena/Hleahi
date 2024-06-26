@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Marche;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -11,16 +12,16 @@ class AuthController extends Controller
 {
     public function index()
     {
-        return view("./admin/login");
+        return view("admin.login");
     }
     public function inscription()
     {
-        return view("./admin/register");
+        return view("admin.register");
     }
 
     public function accueil()
     {
-        return view("admin/index");
+        return view("admin.index");
     }
     
     public function register(Request $request)
@@ -68,7 +69,7 @@ class AuthController extends Controller
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
-        return view("/admin/index");
+        return view("admin.index");
     }
 
     public function logout(Request $request)
@@ -77,4 +78,5 @@ class AuthController extends Controller
 
         return response()->json(['message' => 'Successfully logged out']);
     }
+   
 }

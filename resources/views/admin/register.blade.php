@@ -27,12 +27,19 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <div class="brand-logo">
-                <img src="../../images/logo.svg" alt="logo">
+                <h1>HlèAhi</h1>
               </div>
               <h6 class="font-weight-light">Il est facile de s'inscrire. Quelques étapes suffisent</h6>
               <form action="{{ route('register') }}" method="POST" class="pt-3">
+              @csrf
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" name="adresse" placeholder="Adresse">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" name="phone" placeholder="Phone">
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" name="email" placeholder="Email">
@@ -50,7 +57,7 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                <button class="btn btn-primary btn-block" type="submit"> Connexion </button>
+                <button class="btn btn-primary btn-block" type="submit"> S'incrire </button>
                 </div>
                 <div class="text-center mt-4 font-weight-light">
                 Vous avez déjà un compte ? <a href="{{ route('login') }}" class="text-primary">Connexion</a>

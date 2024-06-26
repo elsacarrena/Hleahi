@@ -17,19 +17,10 @@ class MarcheController extends Controller
         $this->middleware('auth:sanctum');
     }
 
-    public function index(Request $request)
+    public function index()
     {
-        $query = Marche::query();
-
-        if ($request->has('search')) {
-            $search = $request->input('search');
-            $query->where('nom', 'LIKE', "%{$search}%")
-                  
-                  ->orWhere('produits', 'LIKE', "%{$search}%");
-        }
-
-        $marche = $query->get();
-        return response()->json($marche);
+        $marches = Marche::all();
+        return view('admin.index', compact('marches'));
     }
 
     public function store(Request $request)
@@ -47,7 +38,7 @@ class MarcheController extends Controller
             return response()->json($validator->errors(), 422);
         }
 
-        $marche = Marche::create([
+        $marches = Marche::create([
             'nom' => $request->nom,
             'horaires' => $request->horaires,
             'produits' => $request->produits,
@@ -56,25 +47,25 @@ class MarcheController extends Controller
             
         ]);
 
-        return response()->json(['message' => 'Marché created successfully', 'marche' => $marche]);
+        return response()->json(['message' => 'Marché created successfully', 'marche' => $marches]);
     }
 
     public function show($id)
     {
-        $parc = Marche::find($id);
+        $marches = Marche::find($id);
 
-        if (!$parc) {
+        if (!$marches) {
             return response()->json(['message' => 'Marché not found'], 404);
         }
 
-        return response()->json($parc);
+        return response()->json($marches);
     }
 
     public function update(Request $request, $id)
     {
-        $marche = Marche::find($id);
+        $marches = Marche::find($id);
 
-        if (!$marche) {
+        if (!$marches) {
             return response()->json(['message' => 'marché non trouvé'], 404);
         }
 
@@ -91,30 +82,35 @@ class MarcheController extends Controller
             return response()->json($validator->errors(), 422);
         }
 
-        $marche->update($request->all());
+        $marches->update($request->all());
 
-        return response()->json(['message' => 'Marché mis à jour avec succès', 'marche' => $marche]);
+        return response()->json(['message' => 'Marché mis à jour avec succès', 'marche' => $marches]);
     }
 
+    public function marches()
+    {
+        $marches = Marche::all(); // Récupère tous les marchés
+        return view('admin.index', compact('marches')); // Renvoie les marchés à la vue
+    }
     public function getTotalMsisdn()
     {
         
-        $totalmarche = Marche::count(); 
+        $totalmarches = Marche::count(); 
 
         return response()->json([
-            'nom' => $totalmarche,
+            'nom' => $totalmarches,
         ]);
     }
 
     public function destroy($id)
     {
-        $marche = Marche::find($id);
+        $marches = Marche::find($id);
 
-        if (!$marche) {
+        if (!$marches) {
             return response()->json(['message' => 'marché non trouvé'], 404);
         }
 
-        $marche->delete();
+        $marches->delete();
 
         return response()->json(['message' => 'Marché supprimé avec succès']);
     }
